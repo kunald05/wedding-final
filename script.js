@@ -1,7 +1,7 @@
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const params=new URLSearchParams(location.search), guest=params.get('to')||params.get('guest');
 const audio=$('#bgm'); let opened=false, pageIndex=0;
-const pages=Array.from({length:7},(_,i)=>`assets/page-${i+1}.jpg`);
+const pages=Array.from({length:7},(_,i)=>`page-${i+1}.jpg`);
 if(guest){const note=$('.tap'); if(note) note.textContent=`For ${guest.trim().slice(0,60)}`;}
 function openInvitation(e){if(e)e.preventDefault();if(opened)return;opened=true;const gate=$('#welcome');gate.classList.add('is-opening');document.body.classList.add('gate-open');audio.play().catch(()=>{});setTimeout(()=>{gate.style.display='none';window.scrollTo({top:0,behavior:'instant'});$('#music').classList.toggle('playing',!audio.paused);},1350)}
 $('#seal').addEventListener('click',openInvitation);$('#openInvite').addEventListener('click',openInvitation);$('#openingCard').addEventListener('click',openInvitation);$('#openingCard').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')openInvitation(e)});
