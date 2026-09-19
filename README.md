@@ -28,3 +28,6 @@ Wedding details:
 
 ## Update
 The Story section has been intentionally removed. The navigation now goes directly from the hero to the countdown and celebrations, keeping the experience focused on the wedding invitation and events.
+
+
+Latest update: added Shreemanti on 25 November 2026 at 3:00 PM. Also changed the closing date line to a readable wine colour.

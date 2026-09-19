@@ -70,7 +70,7 @@
 .clock strong{letter-spacing:-.03em}
 .clock small{display:block;margin-top:8px}
 .events{position:relative}
-.event{position:relative;grid-template-columns:70px 145px 1fr 40px}
+.event{position:relative;grid-template-columns:70px 145px minmax(0,1fr) 40px}
 .event:after{content:'✦';position:absolute;left:71px;bottom:-6px;font-size:8px;color:var(--gold);background:var(--paper);padding:0 5px;z-index:2}
 .event:last-child:after{display:none}
 .event-no{font-family:'Cormorant Garamond',serif;font-size:18px;letter-spacing:0;color:var(--gold)}
@@ -93,7 +93,7 @@
 .closing-inner{position:relative;z-index:2}
 .closing h2{font-size:clamp(58px,8vw,108px)}
 .closing .eyebrow{margin-bottom:24px}
-.closing-inner>p:last-of-type{font-size:11px;letter-spacing:.28em;color:var(--muted);margin-top:28px}
+.closing-inner>p:last-of-type{font-size:11px;letter-spacing:.28em;color:var(--wine);margin-top:28px}
 .closing-inner>strong{display:block;margin-top:12px;font:600 11px 'DM Sans';letter-spacing:.28em;color:var(--wine)}
 footer{background:#2f2420!important}
 
