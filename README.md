@@ -24,3 +24,7 @@ Wedding details:
 - 25 November 2026 — Reception — 8:00 PM onwards
 - 26 November 2026 — Shaadi — 12:14 PM
 - Nandan Kanan Hotel & Resort
+
+
+## Update
+The Story section has been intentionally removed. The navigation now goes directly from the hero to the countdown and celebrations, keeping the experience focused on the wedding invitation and events.
