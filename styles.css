@@ -122,3 +122,18 @@ footer{background:#2f2420!important}
   .invitation:before{font-size:85px;right:-8px;top:15vw}
   .closing{min-height:70vh}
 }
+
+/* Opening gate: keep the entire invitation site unloaded/inaccessible until the invitation is opened. */
+body.gate-locked{overflow:hidden}
+body.gate-locked main,body.gate-locked .nav,body.gate-locked .music,body.gate-locked footer{display:none!important}
+body.gate-open main,body.gate-open .nav,body.gate-open .music,body.gate-open footer{display:block}
+body.gate-open .nav{display:flex}
+body.gate-open .music{display:grid}
+/* Countdown contrast fix */
+.countdown h2 em{color:#e1b77b!important}
+/* Closing section contrast */
+.closing{background:var(--wine)!important;color:#fff}
+.closing .eyebrow{color:#dfb77d!important}
+.closing h2,.closing h2 em{color:#fff!important}
+.closing h2 em{color:#e1b77b!important}
+.closing-inner>p:last-of-type,.closing-inner>strong{color:#fff!important}
